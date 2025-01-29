@@ -1,11 +1,11 @@
 Branch_ID,Dealer_ID,Model_ID,Revenue,Units_Sold,Date_ID,Day,Month,Year,Branch_Name,Dealer_Name,Product_Name
-BR4414,DLR9681,Cadillac-M155,17935382,1,DT00001,27,11,2017,Lexus Motors,Saab Motors,Cadillac
-BR4251,DLR0830,BMW-M355,9825427,3,DT00002,20,9,2017,Lexus Motors,Tesla Dealers,Tata
-BR3468,DLR8454,Cadillac-M161,13007753,2,DT00003,30,4,2017,Porsche Center,Volvo Cars,Renault
-BR6836,DLR7846,BMW-M243,19384444,10,DT00004,21,12,2017,Lexus Motors,Volvo Cars,Volvo
-BR0180,DLR1968,Honda-M58,9914433,8,DT00005,19,12,2020,Jaguar Land Rover,Deccan Motors,Honda
-BR1711,DLR3743,Volvo-M399,16694829,9,DT00006,20,12,2020,Messerschmitt Motors,AC Cars Motors,Jaguar
-BR1824,DLR3151,Tesla-M158,9945473,8,DT00007,21,4,2018,Jaguar Land Rover,Volvo Cars,Tata
-BR3215,DLR3048,Porsche-M452,17495147,2,DT00008,24,9,2018,Saab Motors,Deccan Motors,Tata
-BR8393,DLR5930,Renault-M110,10633357,7,DT00009,28,8,2018,Porsche Center,Jaguar Land Rover,Tesla
-BR3420,DLR5822,Tata-M476,6836395,1,DT00010,1,7,2019,Volvo Cars,Deccan Motors,Renault
+BR4414,DLR9681,Cadillac-M155,17935382,1,DT02001,27,11,2017,Lexus Motors,Saab Motors,Cadillac
+BR4251,DLR0830,BMW-M355,9825427,3,DT02002,20,9,2017,Lexus Motors,Tesla Dealers,Tata
+BR3468,DLR8454,Cadillac-M161,13007753,2,DT02003,30,4,2017,Porsche Center,Volvo Cars,Renault
+BR6836,DLR7846,BMW-M243,19384444,10,DT02004,21,12,2017,Lexus Motors,Volvo Cars,Volvo
+BR0180,DLR1968,Honda-M58,9914433,8,DT02005,19,12,2020,Jaguar Land Rover,Deccan Motors,Honda
+BR1711,DLR3743,Volvo-M399,16694829,9,DT02006,20,12,2020,Messerschmitt Motors,AC Cars Motors,Jaguar
+BR1824,DLR3151,Tesla-M158,9945473,8,DT02007,21,4,2018,Jaguar Land Rover,Volvo Cars,Tata
+BR3215,DLR3048,Porsche-M452,17495147,2,DT02008,24,9,2018,Saab Motors,Deccan Motors,Tata
+BR8393,DLR5930,Renault-M110,10633357,7,DT02009,28,8,2018,Porsche Center,Jaguar Land Rover,Tesla
+BR3420,DLR5822,Tata-M476,6836395,1,DT02010,1,7,2019,Volvo Cars,Deccan Motors,Renault
