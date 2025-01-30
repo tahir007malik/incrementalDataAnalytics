@@ -16,15 +16,19 @@ The `/Docs` folder contains:
 
 The `/Notebooks` folder contains:
 - `/DimensionTables`: contains notebooks for all dimension tables
+
     - `goldDimBranchNotebook.ipynb`: pyspark notebook for creating branch dimension table
     - `goldDimDateNotebook.ipynb`: pyspark notebook for creating date dimension table
     - `goldDimDealerNotebook.ipynb`: pyspark notebook for creating dealer dimension table
     - `goldDimModelNotebook.ipynb`: pyspark notebook for creating model dimension table
+
 - `/FactTables`: contains notebooks for all fact table
+    
     - `goldFactTableNotebook.ipynb`: pyspark notebook for creating carsales fact table
 - `/SilverLayer`: contains notebooks for silver layer transformation
 
-The `SQL` folder contains:
+The `/SQL` folder contains:
+
 - `1. sourceCarsData.sql`: for creating **source_cars_data** table 
 - `2. waterTable.sql`: for creating **water_table** table 
 - `3. updateWatermarkTable.sql`: for creating stored procedure **updateWatermarkTable**
