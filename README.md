@@ -7,12 +7,12 @@ Link: [YouTube](https://youtu.be/adW2WUgc55s)
 ## Directory Structure
 
 The `/Data` folder contains the source files:
-- **IncrementalSales.csv**: Contains the incremental sales data.
-- **SalesData.csv**: Contains the historical sales data.
+- IncrementalSales.csv**: Contains the incremental sales data.
+- SalesData.csv**: Contains the historical sales data.
 
 The `/Docs` folder contains:
-- **incrementalDataAnalyticsThumbnail.png**: Project thumbnail
-- **incrementalDataAnalyticsWorkflow.png**: Explains project workflow
+- incrementalDataAnalyticsThumbnail.png: Project thumbnail
+- incrementalDataAnalyticsWorkflow.png: Explains project workflow
 
 The `/Notebooks` folder contains:
 - `/DimensionTables`: contains notebooks for all dimension tables
