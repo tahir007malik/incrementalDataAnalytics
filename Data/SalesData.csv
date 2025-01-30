@@ -1,4 +1,4 @@
-﻿Branch_ID,Dealer_ID,Model_ID,Revenue,Units_Sold,Date_ID,Day,Month,Year,BranchName,DealerName,Product_Name
+﻿Branch_ID,Dealer_ID,Model_ID,Revenue,Units_Sold,Date_ID,Day,Month,Year,Branch_Name,Dealer_Name,Product_Name
 BR0001,DLR0001,BMW-M1,13363978,2,DT00001,1,1,2017,AC Cars Motors,AC Cars Motors,BMW
 BR0003,DLR0228,Hon-M218,17376468,3,DT00001,10,5,2017,AC Cars Motors,Deccan Motors,Honda
 BR0004,DLR0208,Tat-M188,9664767,3,DT00002,12,1,2017,AC Cars Motors,Wiesmann Motors,Tata
