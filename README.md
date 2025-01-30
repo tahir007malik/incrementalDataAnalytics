@@ -78,6 +78,8 @@ The `SQL` folder contains:
   - `dim_date`: Date-related attributes.
   - `dim_dealer`: Dealer information.
   - `dim_model`: Model details.
+
+## Azure Data Factory Pipeline
 ![Star Schema used inside pipeline](https://github.com/tahir007malik/incrementalDataAnalytics/blob/main/Docs/incrementalDataAnalyticsPipeline.png)
 
 ## Project Files
