@@ -1,20 +1,45 @@
 # incrementalDataAnalytics
-This project demonstrates incremental analysis of car sales data. The project leverages a medallion architecture to efficiently process and analyze sales data over time, enabling stakeholders to gain insights into sales trends, customer preferences, and inventory management.
+This project demonstrates incremental analysis of car sales data. It leverages a medallion architecture to efficiently process and analyze sales data over time, enabling stakeholders to gain insights into sales trends, customer preferences, and inventory management.
 
+--
+## Video Documentation
+Link: [YouTube](https://youtu.be/adW2WUgc55s)
+
+--
 ## Directory Structure
 
 The `/Data` folder contains the source files:
 - **IncrementalSales.csv**: Contains the incremental sales data.
 - **SalesData.csv**: Contains the historical sales data.
 
+The `/Docs` folder contains:
+- **incrementalDataAnalyticsThumbnail.png**: Project thumbnail
+- **incrementalDataAnalyticsWorkflow.png**: Explains project workflow
+
+The `/Notebooks` folder contains:
+- `/DimensionTables`: contains notebooks for all dimension tables
+    - `goldDimBranchNotebook.ipynb`: pyspark notebook for creating branch dimension table
+    - `goldDimDateNotebook.ipynb`: pyspark notebook for creating date dimension table
+    - `goldDimDealerNotebook.ipynb`: pyspark notebook for creating dealer dimension table
+    - `goldDimModelNotebook.ipynb`: pyspark notebook for creating model dimension table
+- `/FactTables`: contains notebooks for all fact table
+    - `goldFactTableNotebook.ipynb`: pyspark notebook for creating carsales fact table
+- `/SilverLayer`: contains notebooks for silver layer transformation
+
+The `SQL` folder contains:
+- `1. sourceCarsData.sql`: for creating **source_cars_data** table 
+- `2. waterTable.sql`: for creating **water_table** table 
+- `3. updateWatermarkTable.sql`: for creating stored procedure **updateWatermarkTable**
+
 ---
 
 ## Pipeline Workflow
+![Pipeline Workflow](https://github.com/tahir007malik/incrementalDataAnalytics/blob/main/docs/incrementalDataAnalyticsWorflow.png)
 
 ### 1. **Data Ingestion**
 - **Source**: CSV files (`IncrementalSales.csv` and `SalesData.csv`) located in the `/Data` folder on GitHub.
 - **Tool**: Azure Data Factory (ADF).
-- **Process**: ADF ingests data from GitHub and stores it in an **Azure SQL Database**.
+- **Process**: ADF ingests data from GitHub and stores it inside a database named `carsales` on **Azure SQL Database**.
 
 ### 2. **Bronze Layer (Raw Data)**
 - **Storage**: Azure Data Lake Storage Gen2 (ADLS Gen2).
@@ -55,7 +80,7 @@ The `/Data` folder contains the source files:
 
 ## Star Schema Design
 - **Fact Table**:
-  - `factsales`: Contains measures such as sales amount, quantity, and keys linking to dimension tables.
+  - `factsales`: Contains measures such as revenue, units_sold, rev_per_unit, and keys (dim_model_key, dim_branch_key, dim_dealer_key, dim_date_key) linking to dimension tables.
 - **Dimension Tables**:
   - `dim_branch`: Details about branches.
   - `dim_date`: Date-related attributes.
@@ -66,6 +91,8 @@ The `/Data` folder contains the source files:
 
 ## Project Files
 - **/Data**: Contains the initial CSV files.
+- **/Notebooks**: Contains pyspark notebooks for data transformation.
+- **/SQL**: Contains SQL files for creating tables, stored-procedures **Azure SQL Database**.
 - **Azure Data Factory Pipeline**: Used for data ingestion and orchestration.
 - **Databricks Notebooks**: Used for silver layer transformations and gold layer schema creation.
 - **Parquet Files**: Stored in ADLS Gen2 across bronze, silver, and gold layers.
@@ -73,10 +100,9 @@ The `/Data` folder contains the source files:
 ---
 
 ## Future Enhancements
-- Automate the incremental data ingestion process using ADF triggers.
-- Implement CI/CD for pipeline deployment.
-- Add real-time data processing using Kafka or Event Hubs.
-- Expand visualization capabilities with additional KPIs and dashboards.
+- Automating the incremental data ingestion process using ADF triggers.
+- Adding real-time data processing using Kafka or Event Hubs.
+- Expanding visualization capabilities with additional KPIs and dashboards.
 
 ---
 
