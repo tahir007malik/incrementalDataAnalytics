@@ -1,11 +1,11 @@
 # incrementalDataAnalytics
 This project demonstrates incremental analysis of car sales data. It leverages a medallion architecture to efficiently process and analyze sales data over time, enabling stakeholders to gain insights into sales trends, customer preferences, and inventory management.
 
---
+---
 ## Video Documentation
 Link: [YouTube](https://youtu.be/adW2WUgc55s)
 
---
+---
 ## Directory Structure
 
 The `/Data` folder contains the source files:
