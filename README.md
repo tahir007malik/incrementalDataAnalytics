@@ -1,11 +1,9 @@
 # incrementalDataAnalytics
 This project demonstrates incremental analysis of car sales data. It leverages a medallion architecture to efficiently process and analyze sales data over time, enabling stakeholders to gain insights into sales trends, customer preferences, and inventory management.
 
----
 ## Video Documentation
 Link: [YouTube](https://youtu.be/adW2WUgc55s)
 
----
 ## Directory Structure
 
 The `/Data` folder contains the source files:
@@ -31,10 +29,8 @@ The `SQL` folder contains:
 - `2. waterTable.sql`: for creating **water_table** table 
 - `3. updateWatermarkTable.sql`: for creating stored procedure **updateWatermarkTable**
 
----
-
 ## Pipeline Workflow
-![Pipeline Workflow](https://github.com/tahir007malik/incrementalDataAnalytics/blob/main/docs/incrementalDataAnalyticsWorflow.png)
+![Pipeline Workflow](https://github.com/tahir007malik/incrementalDataAnalytics/blob/main/Docs/incrementalDataAnalyticsWorkflow.png)
 
 ### 1. **Data Ingestion**
 - **Source**: CSV files (`IncrementalSales.csv` and `SalesData.csv`) located in the `/Data` folder on GitHub.
@@ -67,16 +63,12 @@ The `SQL` folder contains:
 - **Tools**: Power BI and Tableau.
 - **Purpose**: The data from the gold layer is used for creating dashboards and visualizations to derive business insights.
 
----
-
 ## Technologies Used
 - **Azure Data Factory**: For data ingestion and the orchestration of the entire pipeline.
 - **Azure SQL Database**: Intermediate storage for ingested data.
 - **Azure Data Lake Storage Gen2 (ADLS Gen2)**: For hierarchical data storage across bronze, silver, and gold layers.
 - **Azure Databricks**: For data transformation and schema creation.
 - **Power BI/Tableau**: For visualization and business intelligence.
-
----
 
 ## Star Schema Design
 - **Fact Table**:
@@ -87,8 +79,6 @@ The `SQL` folder contains:
   - `dim_dealer`: Dealer information.
   - `dim_model`: Model details.
 
----
-
 ## Project Files
 - **/Data**: Contains the initial CSV files.
 - **/Notebooks**: Contains pyspark notebooks for data transformation.
@@ -97,14 +87,10 @@ The `SQL` folder contains:
 - **Databricks Notebooks**: Used for silver layer transformations and gold layer schema creation.
 - **Parquet Files**: Stored in ADLS Gen2 across bronze, silver, and gold layers.
 
----
-
 ## Future Enhancements
 - Automating the incremental data ingestion process using ADF triggers.
 - Adding real-time data processing using Kafka or Event Hubs.
 - Expanding visualization capabilities with additional KPIs and dashboards.
-
----
 
 ## Usage Instructions
 1. Clone the repository and locate the `/Data` folder.
@@ -112,7 +98,5 @@ The `SQL` folder contains:
 3. Configure pipelines in Azure Data Factory for data ingestion and orchestration.
 4. Use Databricks notebooks to process and transform data.
 5. Visualize the processed data using Power BI or Tableau.
-
----
 
 This documentation provides a comprehensive overview of the `Incremental Data Analytics` project, ensuring ease of understanding and reproducibility for collaborators and viewers.
