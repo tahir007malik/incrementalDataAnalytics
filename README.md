@@ -1,5 +1,5 @@
-# incrementalDataAnalytics
-This project demonstrates incremental analysis of car sales data. It leverages a medallion architecture to efficiently process and analyze sales data over time, enabling stakeholders to gain insights into sales trends, customer preferences, and inventory management.
+# Incremental Data Analytics
+This repository demonstrates a comprehensive end-to-end data pipeline using Azure Data Factory (ADF), Azure Data Lake Storage Gen2 (ADLS Gen2), Azure SQL Database, and Azure Databricks. The pipeline handles both historical data retrieval and incremental updates from the source. It features a medallion architecture for efficient data management and a star schema design with dimension and fact tables, employing SCD Type-1 for seamless record upserting.
 
 ## Video Documentation
 Link: [YouTube](https://youtu.be/3a8VvBdH4Os)
